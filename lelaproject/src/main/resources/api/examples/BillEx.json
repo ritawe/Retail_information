@@ -1,0 +1,8 @@
+{
+ "id":  123,
+ "ProductName": "juse",
+ "type":  "holle sale",    
+"Price": 100,
+"totalTax": 20,     
+"totalValue": 2    
+ }

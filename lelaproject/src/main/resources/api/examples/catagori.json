@@ -1,0 +1,10 @@
+{
+  "main": "product.raml",
+  "name": "Product",
+  "classifier": "raml",
+  "tags": [],
+  "groupId": "9950c437-fd97-4782-a029-133144bc9160",
+  "assetId": "product",
+  "version": "1.0.0",
+  "apiVersion": "1.0.0"
+}

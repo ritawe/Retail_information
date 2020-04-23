@@ -1,0 +1,224 @@
+#%RAML 1.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/6b896d79-36bc-4b1c-bb2e-d7f01a3d9e80/ # 
+title: product1
+
+
+
+/product:
+  get:
+      description: This API is used to retrieve all details
+      body:
+        application/json:
+          example: !include DataTypes/product.raml 
+            
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/200.json
+        400:
+          body:
+            application/json:
+              example: !include examples/404.json
+                
+  post:
+      description: This API is used to create new product
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/200.json
+        400:
+          body:
+            application/json:
+              example: !include examples/404.json
+  
+  /{productID}:
+    get:
+      
+      description: This API is used to retrieve all product and details
+      body:
+        application/json:
+          example: !include examples/productEX.json
+            
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/200.json
+        400:
+          body:
+            application/json:
+              example: !include examples/404.json
+    
+
+    put:
+      description: This API is used to updat new products
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/200.json
+        400:
+          body:
+            application/json:
+              example: !include examples/404.json
+
+           
+    delete:
+      description: This API is used to delete all product and details
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/200.json
+        400:
+          body:
+            application/json:
+              example:  !include examples/404.json          
+    
+/Bills:
+  get:
+      description: This API used to retrieve all products and details
+      body:
+        application/json:
+          example: !include examples/BillEx.json
+            
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/200.json
+        400:
+          body:
+            application/json:
+              example: !include examples/404.json
+      
+                  
+  post:
+      description: This API used to creat a new product and details 
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/200.json
+        400:
+          body:
+            application/json:
+              example: !include examples/404.json
+                             
+  
+
+  /{BillsID}:
+   get:
+      description: This API used to retrieve all product details
+      body:
+        application/json:
+          example: !include examples/BillEx.json
+            
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/200.json
+        400:
+          body:
+            application/json:
+              example: !include examples/404.json
+   put:
+      description: This API is used to updat new products
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/200.json
+        400:
+          body:
+            application/json:
+              example: !include examples/404.json
+   delete:
+    description: 
+    responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/200.json
+        400:
+          body:
+            application/json:
+              example: !include examples/404.json
+ 
+  
+/ProductCatagory:
+  get:
+      description: This API used to retrieve all product details
+      body:
+        application/json:
+          example: !include examples/catagori.json
+            
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/200.json
+        400:
+          body:
+            application/json:
+              example: !include examples/404.json
+
+      
+                  
+  post:
+      description: This API used to creat a new product and details 
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/200.json
+        400:
+          body:
+            application/json:
+              example: !include examples/404.json
+      
+                   
+            
+  /{ProductCatagoryID}:
+    get:
+      description: This API used to retrieve all product details
+      body:
+        application/json:
+          example: !include examples/productEX.json
+            
+      responses: 
+        200:
+          body:
+            application/json:
+              example: !include examples/200.json
+        400:
+          body:
+            application/json:
+              example: !include examples/404.json
+    put:
+      description: This API is used to updat new products
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/200.json
+        400:
+          body:
+            application/json:
+              example: !include examples/404.json
+    delete:
+      description: This API is used to delete all product and details
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/200.json
+        400:
+          body:
+            application/json:
+              example: !include examples/404.json
+           
+ 
